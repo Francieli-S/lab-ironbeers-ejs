@@ -1,0 +1,5 @@
+<h1>Random Beer</h1>
+<%- include('./patials/beer.ejs', {beer: randomBeerFromApi}) %>
+<h5>Food Pairing</h5>
+<p><%- randomBeerFromApi.food_pairing %></p>
+<p><%- randomBeerFromApi.brewers_tips %></p>

@@ -1,7 +1,9 @@
 <h1>Beers</h1>
-<% beers.forEach(beer => { %>
-<img src="<%= beer.image_url %>" alt="" />
-<h4><%- beer.name %></h4>
-<p><%- beer.tagline %></p>
-<p><%- beer.description %></p>
-<% }); %>
+<div class="beers-display"></div>
+<% beersFromApi.forEach(beer => { %>
+    <div class="each-beer">
+<a href=<%- `/beer-detail/${beer.id}` %>>
+<div class="beer"><%- include('./patials/beer.ejs', {beer})
+    %></div></a></div><% }); %>
+    </div>
+
